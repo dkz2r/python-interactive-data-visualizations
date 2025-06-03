@@ -1574,7 +1574,7 @@ Reference Docs</a> to find an appropriate function.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1603,7 +1603,7 @@ generate the plot.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2237,7 +2237,7 @@ data.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2270,7 +2270,7 @@ displayed on the plot.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2304,7 +2304,7 @@ be displayed on the plot.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2339,7 +2339,7 @@ specified by the newly added widgets.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2513,7 +2513,8 @@ look like:</p>
 Plotly. Note that you may have different version numbers. Here is an
 example of our <code>requirements.txt</code> file:</p>
 <pre class="source"><code>streamlit==1.1.0
-plotly==5.1.0</code></pre>
+plotly==5.1.0
+numpy==1.23.5</code></pre>
 </section><section><h2 class="section-heading" id="push-the-updated-repo">Push the updated repo<a class="anchor" aria-label="anchor" href="#push-the-updated-repo"></a>
 </h2>
 <hr class="half-width">
@@ -2547,6 +2548,29 @@ specify the correct branch name (which is most likely
 <code>main</code>), and specify the filename of your app
 (<code>app.py</code>). Then click “Deploy”, and wait for the
 balloons!</p>
+<div id="caution1" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Caution</h3>
+<div class="callout-content">
+<p>Remember when we were talking about environments and how important
+they are? This is a prime example! The <code>plotly</code> version we
+are using relies on an implementation of a specific data type in numpy:
+np.bool8. This datatype is deprecated and no longer functions as of
+numpy version 2.0.0, which means all code that relies on np.bool8 needs
+to be updated. Plotly 5.1.0 has not yet removed a dependency on this
+data type, and so we are forced to use the last numpy release before
+2.0.0.</p>
+<p>BUT….</p>
+<p>Numpy 1.23.5 <em>itself</em> has a dependency on another library
+called <code>disttools</code>, which was removed with Python version
+3.12. So! In addition to setting numpy in our requirements.txt, we need
+to tell streamlit to use python 3.11.</p>
+</div>
+</div>
+</div>
 <p>You can read the documentation about this process for deploying an
 app <a href="https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app" class="external-link">here</a>.</p>
 </section><section><h2 class="section-heading" id="exercises">Exercises<a class="anchor" aria-label="anchor" href="#exercises"></a>
