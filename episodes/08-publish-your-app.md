@@ -96,6 +96,7 @@ For our app, we only need to specify two packages: Streamlit and Plotly. Note th
 ```source
 streamlit==1.1.0
 plotly==5.1.0
+numpy==1.23.5
 ```
 
 ## Push the updated repo
@@ -117,6 +118,16 @@ On the free Community tier, you can deploy up to 3 apps at once. If you later de
 ## Deploy your app
 
 When you have signed in to your Streamlit account, click "New app". Copy and paste your GitHub repo URL, for example `https://github.com/username/interact-with-gapminder-data-app`, specify the correct branch name (which is most likely `main`), and specify the filename of your app (`app.py`). Then click "Deploy", and wait for the balloons!
+
+::: caution
+
+Remember when we were talking about environments and how important they are? This is a prime example! The `plotly` version we are using relies on an implementation of a specific data type in numpy: np.bool8. This datatype is deprecated and no longer functions as of numpy version 2.0.0, which means all code that relies on np.bool8 needs to be updated. Plotly 5.1.0 has not yet removed a dependency on this data type, and so we are forced to use the last numpy release before 2.0.0.
+
+BUT....
+
+Numpy 1.23.5 *itself* has a dependency on another library called `disttools`, which was removed with Python version 3.12. So! In addition to setting numpy in our requirements.txt, we need to tell streamlit to use python 3.11.
+
+:::
 
 You can read the documentation about this process for deploying an app [here](https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app).
 
