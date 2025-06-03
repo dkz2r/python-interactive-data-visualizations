@@ -18,8 +18,6 @@ The repository that contains this example Streamlit app can be found [here](http
 
 <!-- this is an html comment -->
 
-{% comment %} This is a comment in Liquid {% endcomment %}
-
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
 ## Prerequisites
