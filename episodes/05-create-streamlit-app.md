@@ -160,7 +160,7 @@ We now have a web application that can allow you to share your interactive visua
 ## Add a description
 
 After the plot is displayed, add some text describing the plot.  Hint you may want look at the [Streamlit Reference Docs](https://docs.streamlit.io/library/api-reference)
-to find an appropriate function.
+to find an appropriate function. (There's also a [Streamlit Cheatsheet](https://docs.streamlit.io/develop/quick-reference/cheat-sheet) for a quick reference!)
 
 :::::::::::::::  solution
 
