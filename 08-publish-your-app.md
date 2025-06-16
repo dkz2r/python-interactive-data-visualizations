@@ -94,7 +94,7 @@ interact-with-gapminder-data-app
 For our app, we only need to specify two packages: Streamlit and Plotly. Note that you may have different version numbers. Here is an example of our `requirements.txt` file:
 
 ```source
-streamlit==1.1.0
+streamlit==1.45.1
 plotly==5.1.0
 numpy==1.23.5
 ```
